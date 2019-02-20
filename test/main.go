@@ -9,7 +9,11 @@ func main() {
 	fmt.Println("-----------------Start-----------------")
 	defer fmt.Println("------------------End------------------")
 
-	test146()
+	// 146.LRU缓存机制测试
+	// test146()
+
+	// 470.用Rand7实现Rand10
+	test470()
 }
 
 // test146 : 146.LRU缓存机制测试
@@ -25,4 +29,11 @@ func test146() {
 	fmt.Println(cache.Get(1)) // 返回 -1 (未找到)
 	fmt.Println(cache.Get(3)) // 返回  3
 	fmt.Println(cache.Get(4)) // 返回  4
+}
+
+// test470 ： 470.用Rand7实现Rand10
+func test470() {
+	for i := 0; i < 30; i++ {
+		fmt.Println(code.Rand10())
+	}
 }
